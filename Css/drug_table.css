@@ -1,0 +1,15 @@
+/*Drug Table Stylized CSS*/
+
+
+/*Set Borders for table*/
+table, th, td {
+    border: 1px solid;
+    text-align: left;
+}
+
+
+/*Create hihglight functionality when mousing through each row */ 
+tr:hover {background-color: tomato;}
+
+ 
+

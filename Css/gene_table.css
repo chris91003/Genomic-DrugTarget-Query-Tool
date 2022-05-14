@@ -1,0 +1,42 @@
+/*CSS Template for Gene Information*/
+
+ tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+/*Generate Color for Headings*/
+
+th {
+  background-color: #04AA6D;
+  color: blue;
+}
+
+/*Center Title of Page */
+
+h1{
+    text-align:center;
+}
+
+p{
+    text-align:center;
+}
+
+/* Set Borders for Tables and center */
+table,th, td {
+    border: 1px solid;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/*Center Row Elements*/
+
+td {
+    text-align: center;
+}
+
+/*Highlight Rows*/
+tr:hover {background-color: coral;} 
+

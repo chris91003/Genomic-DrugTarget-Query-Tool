@@ -34,5 +34,5 @@ https://drugcentral.org URL. Load table into excel and save as txt file.
 6. Execute gene and drug cgi with ./drug2.cgi and ./query3.cgi respectively. 
 
 
-*Open Webpage for texting*
+*Open Webpage for Testing*
 Navigate to webpage http://bfx3.aap.jhu.edu/cdimapa1/project/usersearch.html and type in gene of interest or just type any letter and get gene annotation information for the genes of interest. Additionally, at bottom of webpage there is a button functionality element that takes the user to another drug treatment page with significant treatment information for the disease. 

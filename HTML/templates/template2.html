@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gene Output Information</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/search.js"></script>
+    <link rel="stylesheet" href="drug_table.css">
+</head>
+<body>
+<h1>Drug Treatment</h1>
+<p> The following database contains all drug candidates and their molecular function </p>
+<table>
+    <thead>
+    <tr>
+        <th>Drug_Name</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for entry in drug_results %}
+    <tr>
+        <td>{{entry[0] }}</td>
+        <td>{{entry[1] }}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+<p> Go back to previous page </p>
+<a href= "http://bfx3.aap.jhu.edu/cdimapa1/project/query3.cgi">
+    <button> Go Back </button>
+ </a>
+
+</body>
+</html>

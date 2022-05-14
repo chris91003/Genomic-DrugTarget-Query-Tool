@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "utf-8" />
+	<title>Gene Information Databse</title>
+	<!--[if IE]>
+		<script src= "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <link rel= "stylesheet" type="text/css" href="css/search_product.css" />
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	   <script>
+         $(function() {
+            $( "#search_term" ).autocomplete({
+               source: "./gene_namequery.cgi",
+               autoFocus:true
+            });
+         });
+      </script>
+
+</head>
+
+<body id="main">
+	
+	<h1>Gene Database Search</h1>
+    <form name= "gene_search" id= "gene_search" method="post" action="./query3.cgi">
+	<input id= "search_term" name= "search_term" type="search" value="" autofocus="autofocus" placeholder= "Enter gene name"/>
+	<input name="submit" type="submit" id="submit" value="submit">
+    </form>
+    <section id= 'results'>
+	<p>
+	    <span id='match_count'>0</span> match(es) found.
+	</p>
+	</section>
+</body>
+
+</html>

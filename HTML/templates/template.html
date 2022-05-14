@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gene Output Information</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/search.js"></script>
+    <link rel="stylesheet" href="gene_table.css">
+</head>
+<body>
+<h1>Gene Output</h1>
+<p>Gene Annotation Query From NCBI Gene Database</p>
+<table>
+    <thead>
+    <tr>
+        <th>Gene_Name</th>
+        <th>Gene_ID</th>
+        <th>Tax_ID</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for entry in results %}
+    <tr>
+        <td>{{entry[0] }}</td>
+        <td>{{entry[1] }}</td>
+        <td>{{entry[2] }}</td>
+        <td>{{entry[3] }}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+<h2> Drug Database Information </h2>
+
+<p2> Click Drug Database button, which will direct you to all the different treatments for your disease. </p2>
+<a href= "http://bfx3.aap.jhu.edu/cdimapa1/project/drug2.cgi">
+    <button> Go to Drug Database </button>
+ </a>
+
+
+</body>
+</html>

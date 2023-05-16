@@ -1,6 +1,6 @@
 *Description*
 
-Web front-end application containing gene annotation information and drug data for Diabetes using Python, Unix Commandline, Javascript, CSS, and HTML. The purpose of this webpage project was to generate a pipeline that would scrape relevant genetic and treatment data and combine both elements into one concise webpage. 
+Web front-end application containing gene annotation information and drug data for Diabetes using Python, Unix Commandline, SQL, Javascript, CSS, and HTML. The purpose of this webpage project was to generate a pipeline that would scrape relevant genetic and treatment data and combine both elements into one concise webpage. 
 
 *Author*
 Chris Dimapasok
